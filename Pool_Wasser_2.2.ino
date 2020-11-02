@@ -175,7 +175,7 @@ void checkUDP()
   if (!strcmp(packetBuffer_empfang, "c:"))
   {
     Serial.println("Chlor Läuft");
-   // pumpen(1, Chlorml);
+   pumpen(1, Chlorml);
   }
   if (!strcmp(packetBuffer_empfang, "p-"))
   {
