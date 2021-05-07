@@ -108,8 +108,10 @@ void loop() {                                                                   
     //Aus
     sendUDP("Zu:1");
   }
-
+/*********************************************/
     delay (1000);
+  
+/************ UDP Befehle verarbeiten ****************/
 
     int packetSize = udp.parsePacket();
     //Serial.print("packetBuffer_empfang");
