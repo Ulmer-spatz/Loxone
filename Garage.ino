@@ -88,24 +88,24 @@ void loop() {                                                                   
 
   /***************   Endlagenerkennung ****************/
   if (digitalRead(Eingang_Auf) == LOW) {
-    // AN
+    
     sendUDP("Auf:0");
 
 
   } else {
-    //Aus
+    
     sendUDP("Auf:1");
 
   }
 
 
   if (digitalRead(Eingang_Zu) == LOW) {
-    // AN
+    
     sendUDP("Zu:0");
 
 
   } else {
-    //Aus
+    
     sendUDP("Zu:1");
   }
 /*********************************************/
